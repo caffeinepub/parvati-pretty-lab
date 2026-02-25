@@ -1,0 +1,42 @@
+{
+  "kind": "build_request",
+  "title": "Ensure brand name 'Parvati Pretty Lab' is displayed consistently across the entire site",
+  "projectName": "Parvati Pretty Lab",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-17",
+      "text": "Ensure the brand name 'Parvati Pretty Lab' is displayed consistently and correctly across all locations in the site: the Header logo/wordmark, the HeroSection headline or overlay card, the Footer brand name, the browser tab title in frontend/index.html <title>, and any other component or page where the site name appears. Remove or correct any instances where the name is truncated, misspelled, or displayed in a different casing.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "change the name to parvati pretty lab"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The browser tab title in frontend/index.html reads exactly 'Parvati Pretty Lab'",
+        "The Header logo/wordmark displays exactly 'Parvati Pretty Lab'",
+        "The HeroSection overlay card or headline displays exactly 'Parvati Pretty Lab'",
+        "The Footer brand name displays exactly 'Parvati Pretty Lab'",
+        "No other component or page displays a truncated, misspelled, or differently-cased version of the brand name",
+        "The change is consistent across all pages: HomePage, CatalogPage, ProductDetailPage, CartDrawer, CheckoutPage, OrderConfirmationPage"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not alter any visual theme, color palette, typography, or layout — only the brand name text",
+    "Do not modify files listed in frontend.immutablePaths"
+  ],
+  "nonGoals": [
+    "Changing any other content, copy, or product data",
+    "Modifying the backend actor or data models",
+    "Altering the WhatsApp contact number or order flow"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

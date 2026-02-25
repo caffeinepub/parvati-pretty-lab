@@ -1,0 +1,21 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T13:33:01.875Z",
+  "summary": "The diff only shows a modification to project_state.json (a metadata/state tracking file), with no changes to any actual frontend source files such as frontend/index.html, Header component, HeroSection component, Footer component, or any page components. REQ-17 requires updating brand name text across multiple frontend files, none of which appear to have been modified.",
+  "missing_requirements": [
+    {
+      "id": "REQ-17",
+      "requirement": "Ensure the brand name 'Parvati Pretty Lab' is displayed consistently and correctly across all locations: browser tab title in frontend/index.html, Header logo/wordmark, HeroSection overlay card or headline, Footer brand name, and any other component or page where the site name appears.",
+      "reason": "No frontend source files were modified in the diff. The only changed file is project_state.json, which is a metadata file. None of the required files (frontend/index.html, Header component, HeroSection component, Footer component, page components) were updated to reflect the brand name change.",
+      "evidence": [
+        "project_state.json"
+      ]
+    }
+  ],
+  "hallucinated_features": [],
+  "confidence": 0.95,
+  "changed_files": [
+    "project_state.json"
+  ]
+}

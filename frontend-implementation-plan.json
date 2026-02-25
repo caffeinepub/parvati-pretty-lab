@@ -1,0 +1,41 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Ensure brand name 'Parvati Pretty Lab' is displayed consistently across the entire site",
+  "requirements": [
+    {
+      "id": "REQ-17",
+      "summary": "Update all instances of the brand name to display exactly 'Parvati Pretty Lab' consistently across the Header, HeroSection, Footer, browser tab title, and all other locations where the site name appears",
+      "acceptanceCriteria": [
+        "The browser tab title in frontend/index.html reads exactly 'Parvati Pretty Lab'",
+        "The Header logo/wordmark displays exactly 'Parvati Pretty Lab'",
+        "The HeroSection overlay card or headline displays exactly 'Parvati Pretty Lab'",
+        "The Footer brand name displays exactly 'Parvati Pretty Lab'",
+        "No other component or page displays a truncated, misspelled, or differently-cased version of the brand name",
+        "The change is consistent across all pages: HomePage, CatalogPage, ProductDetailPage, CartDrawer, CheckoutPage, OrderConfirmationPage"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Update the <title> tag to read exactly 'Parvati Pretty Lab' to ensure the browser tab displays the correct brand name"
+        },
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "modify",
+          "description": "Update the logo/wordmark text to display exactly 'Parvati Pretty Lab' (verify current text and correct any truncation, misspelling, or casing inconsistencies)"
+        },
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Update the headline text in the centered overlay card to display exactly 'Parvati Pretty Lab' (verify current text and correct any truncation, misspelling, or casing inconsistencies)"
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update the brand name in the footer brand info section to display exactly 'Parvati Pretty Lab' (verify current text and correct any truncation, misspelling, or casing inconsistencies)"
+        }
+      ]
+    }
+  ]
+}

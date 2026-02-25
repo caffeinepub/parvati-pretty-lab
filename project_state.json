@@ -1,0 +1,197 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 15,
+  "summary": "E-commerce website for 'Parvati Pretty Lab' selling artificial nails and jewellery. Includes product listings, shopping cart, and checkout functionality.",
+  "architectural_notes": [
+    "E-commerce site for Parvati Pretty Lab — sells artificial nails and jewellery",
+    "WhatsApp contact number: +91 98980 47431 (used for Pay via WhatsApp checkout flow)"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-build-a-homepage-for-parvati-pretty-lab-featuring-a-hero-banner-with-the-brand-name-and-tagline-a-featured-products-section-showcasing-top-nail-and-jewellery-items-a-category-navigation-section-linking-to-nails-and-jewellery-catalog-pages-and-a-footer-with-brand-information",
+      "title": "Build a Homepage for 'Parvati Pretty Lab' featuring a hero banner with the brand name and tagline, a featured products section showcasing top nail and jewellery items, a category navigation section linking to Nails and Jewellery catalog pages, and a footer with brand information.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-product-catalog-page-that-displays-all-products-in-a-responsive-grid-support-filtering-by-category-all-nails-jewellery-via-tab-or-button-filters-each-product-card-must-show-the-product-image-name-price-and-an-add-to-cart-button",
+      "title": "Build a Product Catalog page that displays all products in a responsive grid. Support filtering by category (All, Nails, Jewellery) via tab or button filters. Each product card must show the product image, name, price, and an 'Add to Cart' button.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-product-detail-page-accessible-from-product-cards-it-must-display-the-full-product-image-name-category-price-description-stock-availability-a-quantity-selector-and-an-add-to-cart-button",
+      "title": "Build a Product Detail page accessible from product cards. It must display the full product image, name, category, price, description, stock availability, a quantity selector, and an 'Add to Cart' button.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-client-side-shopping-cart-using-react-state-or-localstorage-that-tracks-items-quantities-and-totals-provide-a-cart-drawer-or-page-showing-all-cart-items-with-the-ability-to-change-quantities-and-remove-items-plus-a-subtotal-and-a-proceed-to-checkout-button",
+      "title": "Implement a client-side Shopping Cart (using React state or localStorage) that tracks items, quantities, and totals. Provide a Cart drawer or page showing all cart items with the ability to change quantities and remove items, plus a subtotal and a 'Proceed to Checkout' button.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-checkout-page-with-a-form-collecting-customer-name-email-shipping-address-street-city-state-postal-code-and-an-order-summary-on-submission-call-the-backend-to-create-an-order-and-display-a-confirmation-message-with-an-order-id",
+      "title": "Build a Checkout page with a form collecting customer name, email, shipping address (street, city, state, postal code), and an order summary. On submission, call the backend to create an order and display a confirmation message with an order ID.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-cohesive-feminine-and-luxurious-visual-theme-across-the-entire-site-use-a-warm-rose-gold-and-cream-color-palette-elegant-serif-typography-for-headings-paired-with-clean-sans-serif-for-body-text-soft-shadows-and-rounded-card-components-and-decorative-accent-elements-that-evoke-beauty-and-glamour-apply-this-theme-consistently-on-all-pages",
+      "title": "Apply a cohesive feminine and luxurious visual theme across the entire site: use a warm rose-gold and cream color palette, elegant serif typography for headings paired with clean sans-serif for body text, soft shadows and rounded card components, and decorative accent elements that evoke beauty and glamour. Apply this theme consistently on all pages.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-the-herosection-component-replace-the-single-background-banner-image-with-two-images-displayed-together-side-by-side-or-in-a-two-column-layout-within-the-hero-banner-area-both-images-should-maintain-the-existing-overlay-text-tagline-and-cta-buttons-the-two-image-layout-must-remain-visually-cohesive-with-the-rose-gold-and-cream-theme-and-be-fully-responsive-stacked-on-mobile-side-by-side-on-desktop",
+      "title": "In the HeroSection component, replace the single background/banner image with two images displayed together side by side (or in a two-column layout) within the hero banner area. Both images should maintain the existing overlay text, tagline, and CTA buttons. The two-image layout must remain visually cohesive with the rose-gold and cream theme and be fully responsive (stacked on mobile, side by side on desktop).",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-whatsapp-based-payment-contact-option-on-the-checkout-page-display-a-prominent-pay-via-whatsapp-button-that-when-clicked-opens-a-pre-filled-whatsapp-chat-link-wa-me-with-a-message-summarising-the-order-details-item-names-quantities-total-price-and-the-customer-s-name-this-should-appear-alongside-or-instead-of-any-existing-payment-submission-flow",
+      "title": "Add a WhatsApp-based payment/contact option on the Checkout page. Display a prominent 'Pay via WhatsApp' button that, when clicked, opens a pre-filled WhatsApp chat link (wa.me) with a message summarising the order details (item names, quantities, total price, and the customer's name). This should appear alongside or instead of any existing payment submission flow.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-perform-a-production-readiness-audit-and-polish-pass-across-the-entire-site-ensure-all-navigation-links-resolve-correctly-no-placeholder-or-dummy-content-is-visible-to-end-users-all-product-images-load-with-appropriate-fallbacks-the-cart-and-checkout-flow-completes-end-to-end-without-console-errors-and-the-site-is-fully-responsive-on-mobile-and-desktop-remove-any-visible-debug-elements-or-development-only-ui",
+      "title": "Perform a production-readiness audit and polish pass across the entire site. Ensure all navigation links resolve correctly, no placeholder or dummy content is visible to end users, all product images load with appropriate fallbacks, the cart and checkout flow completes end-to-end without console errors, and the site is fully responsive on mobile and desktop. Remove any visible debug elements or development-only UI.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-whatsapp-contact-number-used-in-the-pay-via-whatsapp-button-on-the-checkout-page-to-91-98980-47431-the-wa-me-link-must-use-the-full-international-format-without-spaces-or-special-characters-i-e-wa-me-919898047431-all-pre-filled-whatsapp-message-links-throughout-the-site-must-use-this-number",
+      "title": "Update the WhatsApp contact number used in the 'Pay via WhatsApp' button on the Checkout page to +91 98980 47431. The wa.me link must use the full international format without spaces or special characters (i.e., wa.me/919898047431). All pre-filled WhatsApp message links throughout the site must use this number.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-rebuild-the-entire-parvati-pretty-lab-e-commerce-application-cleanly-from-scratch-incorporating-all-previously-implemented-features-1-homepage-with-hero-banner-two-side-by-side-images-featured-products-category-navigation-trust-badges-tagline-banner-and-footer-2-product-catalog-page-with-category-filters-all-nails-jewellery-and-responsive-product-grid-3-product-detail-page-with-image-name-category-badge-price-description-stock-status-quantity-selector-and-add-to-cart-button-4-client-side-shopping-cart-with-localstorage-persistence-cart-drawer-with-quantity-controls-and-remove-subtotal-and-proceed-to-checkout-button-5-checkout-page-with-customer-name-email-shipping-address-form-order-summary-whatsapp-pay-via-whatsapp-button-using-wa-me-919898047431-with-pre-filled-order-details-message-and-backend-order-submission-6-order-confirmation-page-showing-order-id-and-next-steps-7-rose-gold-and-cream-feminine-luxury-visual-theme-with-playfair-display-serif-headings-and-lato-sans-serif-body-text-soft-shadows-rounded-cards-throughout-all-pages-8-backend-motoko-actor-with-product-and-order-data-models-crud-operations-category-filtering-and-seed-data-of-at-least-6-products-3-artificial-nails-3-jewellery-ensure-no-placeholder-content-all-navigation-links-resolve-correctly-product-images-load-with-fallbacks-cart-and-checkout-flow-completes-without-console-errors-and-the-site-is-fully-responsive-on-mobile-and-desktop",
+      "title": "Rebuild the entire Parvati Pretty Lab e-commerce application cleanly from scratch, incorporating all previously implemented features: (1) Homepage with hero banner (two side-by-side images), featured products, category navigation, trust badges, tagline banner, and footer; (2) Product Catalog page with category filters (All, Nails, Jewellery) and responsive product grid; (3) Product Detail page with image, name, category badge, price, description, stock status, quantity selector, and Add to Cart button; (4) Client-side Shopping Cart with localStorage persistence, cart drawer with quantity controls and remove, subtotal, and Proceed to Checkout button; (5) Checkout page with customer name, email, shipping address form, order summary, WhatsApp 'Pay via WhatsApp' button using wa.me/919898047431 with pre-filled order details message, and backend order submission; (6) Order Confirmation page showing order ID and next steps; (7) Rose-gold and cream feminine luxury visual theme with Playfair Display serif headings and Lato sans-serif body text, soft shadows, rounded cards throughout all pages; (8) Backend Motoko actor with product and order data models, CRUD operations, category filtering, and seed data of at least 6 products (3 artificial nails, 3 jewellery). Ensure no placeholder content, all navigation links resolve correctly, product images load with fallbacks, cart and checkout flow completes without console errors, and the site is fully responsive on mobile and desktop.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-audit-all-frontend-components-pages-and-stylesheets-for-any-use-of-black-or-near-black-colours-e-g-000-111-1a1a1a-text-black-bg-black-border-black-gray-900-used-as-a-primary-accent-colour-and-replace-them-with-appropriate-rose-gold-cream-or-warm-neutral-tones-from-the-existing-design-system-rose-gold-palette-cream-blush-and-warm-grays-this-applies-to-text-backgrounds-borders-icons-badges-buttons-overlays-and-any-other-ui-elements-across-all-pages-homepage-catalogpage-productdetailpage-cartdrawer-checkoutpage-orderconfirmationpage-header-footer-herosection-categorynavigation-featuredproducts-productcard-and-ordersummary",
+      "title": "Audit all frontend components, pages, and stylesheets for any use of black or near-black colours (e.g., #000, #111, #1a1a1a, text-black, bg-black, border-black, gray-900 used as a primary/accent colour) and replace them with appropriate rose-gold, cream, or warm neutral tones from the existing design system (rose-gold palette, cream, blush, and warm grays). This applies to text, backgrounds, borders, icons, badges, buttons, overlays, and any other UI elements across all pages: HomePage, CatalogPage, ProductDetailPage, CartDrawer, CheckoutPage, OrderConfirmationPage, Header, Footer, HeroSection, CategoryNavigation, FeaturedProducts, ProductCard, and OrderSummary.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-brand-name-parvati-pretty-lab-is-displayed-consistently-and-correctly-across-the-entire-site-in-the-header-logo-wordmark-the-herosection-headline-or-overlay-card-the-footer-brand-name-the-browser-tab-title-index-html-title-and-any-other-location-where-the-site-name-appears-remove-or-correct-any-instances-where-the-name-is-truncated-misspelled-or-displayed-in-a-different-casing",
+      "title": "Ensure the brand name 'Parvati Pretty Lab' is displayed consistently and correctly across the entire site: in the Header logo/wordmark, the HeroSection headline or overlay card, the Footer brand name, the browser tab title (index.html <title>), and any other location where the site name appears. Remove or correct any instances where the name is truncated, misspelled, or displayed in a different casing.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Product catalog for artificial nails and jewellery",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Shopping cart and checkout flow",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Homepage with branding for Parvati Pretty Lab",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Product detail pages with images, descriptions, and pricing",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Create a backend data model and actor to manage products (artificial nails and jewellery), including fields: id, name, category (nails | jewellery), description, price, imageUrl, stock quantity, and tags. Expose query functions to list all products, filter by category, and get a single product by ID. Expose update functions to add, update, and remove products.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Create a backend order/cart model that allows users to submit an order with a list of product IDs and quantities, a customer name, email, and shipping address. Store orders in stable state and provide a function to retrieve all orders.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Seed the canister with at least 6 sample products (3 artificial nails, 3 jewellery items) with names, descriptions, prices, and placeholder image URLs so the storefront is visually populated on first load.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Replace the single first hero/banner image with two images displayed together in that section.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Setup WhatsApp payment option integration for checkout",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Change black color elements in the site to match the rose-gold and cream theme, and ensure the site name displays as 'Parvati Pretty Lab' throughout.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "Ensure the brand name 'Parvati Pretty Lab' is displayed consistently and correctly across all locations in the site: the Header logo/wordmark, the HeroSection headline or overlay card, the Footer brand name, the browser tab title in frontend/index.html <title>, and any other component or page where the site name appears. Remove or correct any instances where the name is truncated, misspelled, or displayed in a different casing.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Parvati Pretty Lab",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

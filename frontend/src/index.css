@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: oklch(0.98 0.01 60);
+    --foreground: oklch(0.22 0.03 30);
+
+    --card: oklch(0.99 0.005 60);
+    --card-foreground: oklch(0.22 0.03 30);
+
+    --popover: oklch(0.99 0.005 60);
+    --popover-foreground: oklch(0.22 0.03 30);
+
+    --primary: oklch(0.65 0.12 30);
+    --primary-foreground: oklch(1 0 0);
+
+    --secondary: oklch(0.92 0.04 60);
+    --secondary-foreground: oklch(0.3 0.05 30);
+
+    --muted: oklch(0.94 0.02 60);
+    --muted-foreground: oklch(0.55 0.04 30);
+
+    --accent: oklch(0.88 0.06 50);
+    --accent-foreground: oklch(0.3 0.05 30);
+
+    --destructive: oklch(0.55 0.2 25);
+    --destructive-foreground: oklch(1 0 0);
+
+    --border: oklch(0.88 0.04 50);
+    --input: oklch(0.88 0.04 50);
+    --ring: oklch(0.65 0.12 30);
+
+    --radius: 0.5rem;
+
+    --rose-gold: oklch(0.65 0.12 30);
+    --rose-gold-light: oklch(0.82 0.08 40);
+    --rose-gold-dark: oklch(0.5 0.14 28);
+    --cream: oklch(0.97 0.02 70);
+    --cream-dark: oklch(0.92 0.04 60);
+    --blush: oklch(0.88 0.06 20);
+  }
+
+  .dark {
+    --background: oklch(0.18 0.025 30);
+    --foreground: oklch(0.95 0.01 60);
+
+    --card: oklch(0.22 0.025 30);
+    --card-foreground: oklch(0.95 0.01 60);
+
+    --popover: oklch(0.22 0.025 30);
+    --popover-foreground: oklch(0.95 0.01 60);
+
+    --primary: oklch(0.72 0.1 35);
+    --primary-foreground: oklch(0.18 0.025 30);
+
+    --secondary: oklch(0.28 0.04 30);
+    --secondary-foreground: oklch(0.9 0.02 60);
+
+    --muted: oklch(0.25 0.03 30);
+    --muted-foreground: oklch(0.65 0.04 50);
+
+    --accent: oklch(0.3 0.05 35);
+    --accent-foreground: oklch(0.9 0.02 60);
+
+    --destructive: oklch(0.55 0.2 25);
+    --destructive-foreground: oklch(1 0 0);
+
+    --border: oklch(0.32 0.04 30);
+    --input: oklch(0.32 0.04 30);
+    --ring: oklch(0.72 0.1 35);
+
+    --rose-gold: oklch(0.72 0.1 35);
+    --rose-gold-light: oklch(0.82 0.08 40);
+    --rose-gold-dark: oklch(0.55 0.12 28);
+    --cream: oklch(0.25 0.03 60);
+    --cream-dark: oklch(0.2 0.02 50);
+    --blush: oklch(0.3 0.06 20);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}

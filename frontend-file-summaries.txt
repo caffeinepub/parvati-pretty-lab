@@ -1,0 +1,23 @@
+{
+  "frontend/src/index.css": "Global stylesheet importing Playfair Display and Lato fonts, defining OKLCH rose-gold and cream color palette CSS variables for light and dark modes with warm foreground tones (no pure black), and applying base Tailwind directives with semantic font assignments.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme with Playfair Display serif and Lato body fonts, OKLCH-based color tokens using CSS custom properties directly (not hsl wrappers), custom border radii, soft card shadows, and fade/accordion animations for the luxury beauty brand.",
+  "frontend/src/context/CartContext.tsx": "React context and provider for shopping cart state with localStorage persistence, providing add/remove/update/clear operations, item count, subtotal, and cart drawer open/close state.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks encapsulating all backend operations: getAllProducts, getProductsByCategory, getProduct, createOrder mutation, seedProducts mutation, and getAllOrders.",
+  "frontend/src/lib/utils.ts": "Utility functions for className merging (cn), INR currency formatting (formatPrice), product category label display (getCategoryLabel), and product image URL resolution with category-specific placeholder fallbacks (getProductImageUrl).",
+  "frontend/src/components/Header.tsx": "Sticky header with rose-gold branded logo/wordmark \"Parvati Pretty Lab\", desktop/mobile navigation links with rose-gold hover states, and cart icon with item count badge — all using warm rose-gold tones instead of black.",
+  "frontend/src/components/Footer.tsx": "Brand footer with logo, shop navigation links, WhatsApp contact info, copyright line, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/components/Layout.tsx": "Root layout component composing Header, Footer, and CartDrawer around child routes rendered via TanStack Router's Outlet.",
+  "frontend/src/components/CartDrawer.tsx": "Slide-in Sheet cart drawer displaying items with images, quantity controls, remove buttons, subtotal, and a checkout navigation button.",
+  "frontend/src/components/ProductCard.tsx": "Responsive product card with image, category badge, name, truncated description, INR price, out-of-stock overlay, and Add to Cart button.",
+  "frontend/src/components/QuantitySelector.tsx": "Reusable increment/decrement quantity selector with min/max bounds and accessible ARIA labels styled with the rose-gold theme.",
+  "frontend/src/components/HeroSection.tsx": "Full-width hero section with two side-by-side images (nails and jewellery), gradient overlays, and a centered overlay card with headline, tagline, and CTA buttons.",
+  "frontend/src/components/CategoryNavigation.tsx": "Two-column category cards for Nails and Jewellery with hover zoom effects, rose-gold gradient overlays (replacing black gradients), cream-toned category labels, and rose-gold arrow navigation links to filtered catalog pages.",
+  "frontend/src/components/FeaturedProducts.tsx": "Featured products grid showing up to 4 products with loading skeletons, empty state, and View All link to the catalog.",
+  "frontend/src/components/OrderSummary.tsx": "Checkout order summary panel listing cart items with images, quantities, line totals, subtotal, free shipping in rose-gold (replacing green), and total in INR format.",
+  "frontend/src/pages/HomePage.tsx": "Homepage auto-seeding products if empty, rendering HeroSection, trust badges grid, FeaturedProducts, CategoryNavigation, and a rose-gold tagline banner.",
+  "frontend/src/pages/CatalogPage.tsx": "Product catalog page with All/Nails/Jewellery filter buttons updating URL search params, responsive product grid, loading skeletons, and empty state handling.",
+  "frontend/src/pages/ProductDetailPage.tsx": "Product detail page with image, category badge, name, price, description, tags, stock status, quantity selector, and Add to Cart button with breadcrumb navigation.",
+  "frontend/src/pages/CheckoutPage.tsx": "Checkout page with customer/shipping form validation, OrderSummary panel, WhatsApp payment button generating pre-filled wa.me/919898047431 link, and standard Place Order button both saving to backend and navigating to confirmation.",
+  "frontend/src/pages/OrderConfirmationPage.tsx": "Order confirmation page showing rose-gold/blush success icon (replacing green), order reference ID, four-step \"What Happens Next\" checklist with rose-gold step numbers, WhatsApp contact CTA on cream background, and navigation buttons.",
+  "frontend/src/App.tsx": "Main app configuring TanStack Router with all five routes (home, catalog, product detail, checkout, order confirmation), wrapped in QueryClientProvider and CartProvider with Layout as root component."
+}
